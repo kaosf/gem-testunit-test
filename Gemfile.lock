@@ -1,12 +1,51 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    atk (2.2.2)
+      glib2 (= 2.2.2)
+    cairo (1.12.9)
+      pkg-config (>= 1.1.5)
+    gdk_pixbuf2 (2.2.2)
+      glib2 (= 2.2.2)
+    glib2 (2.2.2)
+      pkg-config
+    gtk2 (2.2.2)
+      atk (= 2.2.2)
+      gdk_pixbuf2 (= 2.2.2)
+      pango (= 2.2.2)
+    hoe (3.13.0)
+      rake (>= 0.8, < 11.0)
+    pango (2.2.2)
+      cairo (>= 1.12.5)
+      glib2 (= 2.2.2)
+    pkg-config (1.1.5)
     power_assert (0.1.4)
+    rake (10.3.2)
+    rr (1.1.2)
     test-unit (3.0.2)
       power_assert
+    test-unit-full (0.0.3)
+      test-unit
+      test-unit-notify
+      test-unit-rr
+      test-unit-runner-fox
+      test-unit-runner-gtk2
+      test-unit-runner-tk
+    test-unit-notify (1.0.4)
+      test-unit (>= 2.4.9)
+    test-unit-rr (1.0.3)
+      rr (>= 1.1.1)
+      test-unit (>= 2.5.2)
+    test-unit-runner-fox (0.0.1)
+      hoe (>= 1.6.0)
+    test-unit-runner-gtk2 (0.0.2)
+      gtk2
+      test-unit
+    test-unit-runner-tk (0.0.1)
+      hoe (>= 1.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  test-unit
+  test-unit-full (= 0.0.3)
